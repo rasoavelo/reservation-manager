@@ -1,6 +1,22 @@
-# Project
+# test-gestion-reservation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1. and aims for managing reservation
+
+## Setting up
+
+Clone the repository with
+
+```bash
+git clone https://github.com/rasoavelo/reservation-manager.git
+```
+
+Go to the directory
+
+```bash
+cd reservation-manager
+```
+
+And run `npm install`
 
 ## Development server
 

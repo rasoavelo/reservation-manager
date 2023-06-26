@@ -1,0 +1,38 @@
+mat-grid-tile {
+    background: lightblue;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+  }
+
+.mat-column-position, .mat-column-symbol, .mat-column-name {
+    flex: 0 0 15% !important;
+    width: 15% !important;
+}
+
+.table-row-vertical {
+    height: 30px !important;
+}
+
+.table-row-horizontal {
+    height: 20px !important;
+}
+
+.table-cell-state, .table-cell-category, .table-cell-room {
+    width: 20px !important;
+}
+
+mat-grid-tile {
+    background-color: #fff;
+}
+
+mat-grid-tile::ng-deep .mat-grid-tile-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#vertical-table {
+    overflow-x: scroll;
+}
