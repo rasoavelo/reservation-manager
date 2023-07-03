@@ -3,6 +3,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { CalendarOptions, DateSelectArg, EventClickArg } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
 
 export interface PeriodicElement {
   name: string;
@@ -41,10 +42,10 @@ export class ReservationComponent {
   
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
-    plugins: [dayGridPlugin],
+    plugins: [dayGridPlugin, interactionPlugin],
     events: [
-      { title: 'event 1', start: '2023-06-01', end: '2023-06-05', color: "yellow" },
-      { title: 'event 2', start: '2023-06-20', end: '2023-06-25' }
+      { title: 'event 1', start: '2023-07-01', end: '2023-07-05', color: "yellow" },
+      { title: 'event 2', start: '2023-07-20', end: '2023-07-25' }
     ],
     headerToolbar: {start: "", right: "", left: "", end: "", center: "title"},
     droppable: true,
