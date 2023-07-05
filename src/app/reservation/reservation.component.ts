@@ -45,7 +45,7 @@ export class ReservationComponent {
     ],
     onTimeRangeSelected: async (args) => {
       const dp = args.control;
-      const modal = await DayPilot.Modal.prompt("Create a new event:", "Event 1");
+      const modal = await DayPilot.Modal.prompt("Create a new reservation:", "Event 1");
       dp.clearSelection();
       if (modal.canceled) { return; }
       dp.events.add({
