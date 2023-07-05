@@ -42,6 +42,10 @@ export class ReservationComponent {
       { id: "102", tags: { name: "Room 102", location: "Floor 1", size: "3 beds" } },
       { id: "103", tags: { name: "Room 103", location: "Floor 1", size: "1 bed" } },
       { id: "201", tags: { name: "Room 201", location: "Floor 2", size: "2 beds" } },
+      { id: "101", tags: { name: "Room 101", location: "Floor 1", size: "2 beds" } },
+      { id: "102", tags: { name: "Room 102", location: "Floor 1", size: "3 beds" } },
+      { id: "103", tags: { name: "Room 103", location: "Floor 1", size: "1 bed" } },
+      { id: "201", tags: { name: "Room 201", location: "Floor 2", size: "2 beds" } },
     ],
     onTimeRangeSelected: async (args) => {
       const dp = args.control;

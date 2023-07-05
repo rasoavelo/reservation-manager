@@ -10,7 +10,7 @@ import {NgIf, NgFor} from '@angular/common';
 })
 export class AppComponent implements OnDestroy{
   mobileQuery: MediaQueryList;
-  fillerNav = [{path: "/reservation", text: "Reservation"}];
+  fillerNav = [{path: "/reservation", text: "Réservation"}];
 
   private _mobileQueryListener: () => void;
 

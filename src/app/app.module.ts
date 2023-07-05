@@ -6,6 +6,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 import { DayPilotModule } from 'daypilot-pro-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { ReservationComponent } from './reservation/reservation.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    DayPilotModule
+    DayPilotModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

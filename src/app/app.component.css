@@ -13,8 +13,12 @@
   z-index: 2;
 }
 
-h1.app-name {
+a.app-name {
   margin-left: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 h1 span {
@@ -29,8 +33,14 @@ h1 span {
   flex: 1 0 auto;
 }
 
+.toolbar {
+  background-color: #343A40;
+  color: #ffffff;
+}
+
 mat-sidenav {
   width: 200px;
+  background-color: #212529;
 }
 
 main {
