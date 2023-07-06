@@ -7,6 +7,9 @@
   left: 0;
   right: 0;
 }
+span{
+  color: aqua;
+}
 
 .is-mobile .toolbar {
   position: fixed;

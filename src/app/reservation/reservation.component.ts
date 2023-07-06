@@ -33,23 +33,23 @@ export class ReservationComponent {
     },
     rowHeaderColumnsMode: "Tabular",
     rowHeaderColumns: [
-      { text: 'Name', display: "name", sort: "name" },
-      { text: 'Floor', display: "location", sort: "location" },
-      { text: 'Size', display: "size", sort: "size" }
+      { text: 'Chambre', display: "name", sort: "name" },
+      { text: 'Categorie', display: "location", sort: "location" },
+      { text: 'Etat', display: "size", sort: "size" }
     ],
     resources: [
-      { id: "101", tags: { name: "Room 101", location: "Floor 1", size: "2 beds" } },
-      { id: "102", tags: { name: "Room 102", location: "Floor 1", size: "3 beds" } },
-      { id: "103", tags: { name: "Room 103", location: "Floor 1", size: "1 bed" } },
-      { id: "201", tags: { name: "Room 201", location: "Floor 2", size: "2 beds" } },
-      { id: "101", tags: { name: "Room 101", location: "Floor 1", size: "2 beds" } },
-      { id: "102", tags: { name: "Room 102", location: "Floor 1", size: "3 beds" } },
-      { id: "103", tags: { name: "Room 103", location: "Floor 1", size: "1 bed" } },
-      { id: "201", tags: { name: "Room 201", location: "Floor 2", size: "2 beds" } },
+      { id: "1", tags: { name: "Chambre 001", location: "St-tw", size: "TW" } },
+      { id: "2", tags: { name: "Chambre 002", location: "St-DR", size: "DR" } },
+      { id: "3", tags: { name: "Chambre 003", location: "St-DA", size: "DA" } },
+      { id: "4", tags: { name: "Chambre 004", location: "St-DB", size: "DB" } },
+      { id: "5", tags: { name: "Chambre 005", location: "St-CP", size: "CP" } },
+      { id: "6", tags: { name: "Chambre 006", location: "ST-DU", size: "DU" } },
+      { id: "7", tags: { name: "Chambre 007", location: "ST-LP", size: "LP" } },
+      { id: "8", tags: { name: "Chambre 008", location: "ST-OS", size: "DS" } },
     ],
     onTimeRangeSelected: async (args) => {
       const dp = args.control;
-      const modal = await DayPilot.Modal.prompt("Create a new reservation:", "Event 1");
+      const modal = await DayPilot.Modal.prompt("Créer nouvelle reservation:", "saisir une reservation");
       dp.clearSelection();
       if (modal.canceled) { return; }
       dp.events.add({
